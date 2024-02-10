@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Reader
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h2>
+             Enter the Text
+        </h2>
+    </div>
+    <div>
+        <form  method="post" action="/">
+            <textarea  name="text" placeholder="paste text here" cols="60" rows="20"></textarea>
+            <button type="submit">Read</button>
+        </form>
+    </div>
+{% endblock %}
+
+

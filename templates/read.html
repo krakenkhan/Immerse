@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}
+    Reader
+{% endblock %}
+
+{% block main %}
+    <div>
+        <h2>
+             Click on the words you don't know
+        </h2>
+    </div>
+    <div>
+        {%for text in texts%}
+            <span></span>
+            <span class="clickableText">{{text}}</span>
+        {%endfor%}
+    </div>
+    <script type="text/javascript" src="static/script.js"></script>
+{% endblock %}
+
+
